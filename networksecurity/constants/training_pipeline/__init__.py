@@ -7,7 +7,7 @@ import numpy as np
 
 TARGET_COLUMN="Result"
 PIPELINE_NAME:str="NetworkSecurity"
-ARTIFICAT_DIR:str="Artifacts"
+ARTIFACT_DIR:str="Artifacts"
 FILE_NAME:str="phisingData.csv"
 
 TRAIN_FILE_NAME:str="train.csv"

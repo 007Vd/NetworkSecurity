@@ -8,9 +8,11 @@ class NetworkSecurityException(Exception):
         self.lineno=exc_tb.tb_lineno
         self.file_name=exc_tb.tb_frame.f_code.co_filename
     def __str__(self):
-        return "error occured in pythojn script name[{0}] line number [{1}] error message[{2}]"
-        self.file_name,self.lineno,str(self.error_message)
-    
+        return "error occured in pythojn script name[{0}] line number [{1}] error message[{2}]".format(        
+        self.file_name,
+        self.lineno,
+        str(self.error_message)
+        )
 if __name__=="__main__":
     try:
         logger.logging.info("enter the try block")
